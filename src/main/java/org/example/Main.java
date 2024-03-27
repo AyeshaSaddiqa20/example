@@ -10,16 +10,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt the user to enter their name
-        System.out.print("Enter your name: ");
-
-        // Read the user's input (name) from the console
+        System.out.print("Enter student's name: ");
         String name = scanner.nextLine();
 
-        // Call the welcomeUser method from the GreetingUtility class and pass the user's name as an argument
-        GreetingUtility.welcomeUser(name);
+        // Prompt the user to enter student's ID
+        System.out.print("Enter student's ID: ");
+        int studentId = scanner.nextInt();
 
-        // Call the farewellUser method from the GreetingUtility class and pass the user's name as an argument
-        GreetingUtility.farewellUser(name);
+        // Create a Student object
+        Student student = new Student(name, studentId);
+
+        // Print student's information
+        System.out.println("Student's name: " + student.getName());
+        System.out.println("Student's ID: " + student.getStudentId());
 
         // Close the Scanner object to prevent resource leak
         scanner.close();
