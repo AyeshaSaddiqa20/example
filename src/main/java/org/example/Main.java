@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Scanner;
 
 // Main class
@@ -15,7 +16,10 @@ public class Main {
         String name = scanner.nextLine();
 
         // Call the welcomeUser method from the GreetingUtility class and pass the user's name as an argument
-        GreetingUtility.welcomeUser(name); // Updated method call from Greeting.greetUser to GreetingUtility.welcomeUser
+        GreetingUtility.welcomeUser(name);
+
+        // Call the farewellUser method from the GreetingUtility class and pass the user's name as an argument
+        GreetingUtility.farewellUser(name);
 
         // Close the Scanner object to prevent resource leak
         scanner.close();
