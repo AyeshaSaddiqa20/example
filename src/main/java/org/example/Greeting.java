@@ -8,4 +8,5 @@ public class Greeting {
         // Print a greeting message with the user's name
         System.out.println("Hello, " + name + "! Welcome to Java programming.");
     }
+
 }

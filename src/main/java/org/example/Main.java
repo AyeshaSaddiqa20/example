@@ -10,6 +10,7 @@ public class Main {
 
         // Prompt the user to enter their name
         System.out.print("Enter your name: ");
+        System.out.print("Enter your name: ");
 
         // Read the user's input (name) from the console
         String name = scanner.nextLine();
