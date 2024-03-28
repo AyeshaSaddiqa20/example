@@ -2,20 +2,20 @@ package org.example;
 
 // Define a subclass called Student
 public class Student extends Person {
-    private int studentId;
+    private int studentNumber; // Replaced attribute
 
-    // Constructor
-    public Student(String name, int studentId) {
+    // Constructor with updated parameter
+    public Student(String name, int studentNumber) {
         super(name);
-        this.studentId = studentId;
+        this.studentNumber = studentNumber;
     }
 
-    // Getter and setter for studentId attribute
-    public int getStudentId() {
-        return studentId;
+    // Getter and setter for studentNumber attribute
+    public int getStudentNumber() {
+        return studentNumber;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setStudentNumber(int studentNumber) {
+        this.studentNumber = studentNumber;
     }
 }
