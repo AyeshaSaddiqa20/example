@@ -1,17 +1,17 @@
 package org.example;
-
+// Extracted class Person from Student
 public class Person {
-    protected String name;
+    private String firstName;
+    private String lastName;
 
-    public Person(String name) {
-        this.name = name;
+    // Extracted method to set person's name
+    public void setName(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
+    // Extracted method to get person's name
     public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        return firstName + " " + lastName;
     }
 }

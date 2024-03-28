@@ -1,23 +1,28 @@
 package org.example;
+// Split variable studentIdentifier into firstName and lastName
+public class Student {
+    private String firstName;
+    private String lastName;
+    private String studentID;
 
-public class Student extends Person {
-    private int studentNumber;
-
-    public Student(String name, int studentNumber) {
-        super(name);
-        this.studentNumber = studentNumber;
+    // Change variable type from int to String for studentID
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
     }
 
-    public int getStudentNumber() {
-        return studentNumber;
+    // Change variable type from int to String for studentID
+    public String getStudentID() {
+        return studentID;
     }
 
-    public void setStudentNumber(int studentNumber) {
-        this.studentNumber = studentNumber;
+    // Change variable type from int to String for studentID
+    public void setName(String firstName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public void printStudentInformation() {
-        System.out.println("Student's name: " + getName());
-        System.out.println("Student's ID: " + getStudentNumber());
+    // Rename attribute studentID to studentIdentifier
+    public String getStudentIdentifier() {
+        return firstName + lastName + studentID;
     }
 }
