@@ -4,26 +4,14 @@ import java.util.Scanner;
 
 // Main class
 public class Main {
-    // Main method
     public static void main(String[] args) {
-        // Create a Scanner object to read input from the console
-        Scanner scanner = new Scanner(System.in);
-
-        // Prompt the user to enter their name
+        Scanner inputScanner = new Scanner(System.in); // Variable name changed: scanner to inputScanner
         System.out.print("Enter student's name: ");
-        String name = scanner.nextLine();
-
-        // Prompt the user to enter student's ID
+        String studentName = inputScanner.nextLine(); // Variable name changed: name to studentName
         System.out.print("Enter student's ID: ");
-        int studentId = scanner.nextInt();
-
-        // Create a Student object
-        Student student = new Student(name, studentId);
-
-        // Print student's information
+        int studentIdentifier = inputScanner.nextInt(); // Variable name changed: studentId to studentIdentifier
+        Student student = new Student(studentName, studentIdentifier);
         System.out.println("Student's name: " + student.getName());
-
-        // Close the Scanner object to prevent resource leak
-        scanner.close();
+        inputScanner.close();
     }
 }
