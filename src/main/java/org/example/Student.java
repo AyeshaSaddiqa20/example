@@ -2,19 +2,20 @@ package org.example;
 
 // Define a subclass called Student
 public class Student extends Person {
+    private int studentNumber;
 
     // Constructor
     public Student(String name, int studentNumber) {
         super(name);
-        // No need to initialize studentNumber here anymore
+        this.studentNumber = studentNumber;
     }
 
-    // No need to have getter and setter for studentNumber here anymore
+    // Getter and setter for studentNumber attribute
+    public int getStudentNumber() {
+        return studentNumber;
+    }
 
-    // Method to be extracted
-    public void printStudentInformation() {
-        System.out.println("Student's name: " + getName());
-        System.out.println("Student's ID: " + getStudentNumber());
-        // Add more information if needed
+    public void setStudentNumber(int studentNumber) {
+        this.studentNumber = studentNumber;
     }
 }
