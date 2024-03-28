@@ -22,19 +22,8 @@ public class Main {
 
         // Print student's information
         System.out.println("Student's name: " + student.getName());
-        System.out.println("Student's ID: " + student.getStudentId());
-
-        // Call the new method to duplicate some code
-        printStudentInformation(student);
 
         // Close the Scanner object to prevent resource leak
         scanner.close();
-    }
-
-    // New method to duplicate some code
-    private static void printStudentInformation(Student student) {
-        // Print student's information again (duplicated code)
-        System.out.println("Student's name: " + student.getName());
-        System.out.println("Student's ID: " + student.getStudentId());
     }
 }
