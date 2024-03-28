@@ -2,16 +2,15 @@ package org.example;
 
 import java.util.Scanner;
 
-// Main class
 public class Main {
+
     public static void main(String[] args) {
-        Scanner inputScanner = new Scanner(System.in); // Variable name changed: scanner to inputScanner
-        System.out.print("Enter student's name: ");
-        String studentName = inputScanner.nextLine(); // Variable name changed: name to studentName
-        System.out.print("Enter student's ID: ");
-        int studentIdentifier = inputScanner.nextInt(); // Variable name changed: studentId to studentIdentifier
-        Student student = new Student(studentName, studentIdentifier);
-        System.out.println("Student's name: " + student.getName());
-        inputScanner.close();
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Enter student name:");
+        String studentName = inputScanner.nextLine();
+        System.out.println("Enter student identifier:");
+        int studentIdentifier = inputScanner.nextInt();
+        System.out.println("Student's name: " + studentName);
+        System.out.println("Student's identifier: " + studentIdentifier);
     }
 }
