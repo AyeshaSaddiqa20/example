@@ -18,10 +18,8 @@ public class Person {
         this.name = name;
     }
 
-    // New method to be extracted and moved
-    public void printPersonInformation() {
-        System.out.println("Person's name: " + getName());
-        // Add more information if needed
+    // Method to be moved
+    public void printInformation() {
+        System.out.println("Name: " + getName());
     }
 }
-

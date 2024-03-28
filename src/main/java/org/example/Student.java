@@ -18,4 +18,10 @@ public class Student extends Person {
     public void setStudentNumber(int studentNumber) {
         this.studentNumber = studentNumber;
     }
+
+    // Method to be inlined
+    public void printStudentInformation() {
+        System.out.println("Student's name: " + getName());
+        System.out.println("Student's ID: " + getStudentNumber());
+    }
 }
