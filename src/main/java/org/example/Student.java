@@ -2,9 +2,9 @@ package org.example;
 
 // Define a subclass called Student
 public class Student extends Person {
-    private int studentNumber; // Replaced attribute
+    private int studentNumber;
 
-    // Constructor with updated parameter
+    // Constructor
     public Student(String name, int studentNumber) {
         super(name);
         this.studentNumber = studentNumber;
@@ -17,5 +17,11 @@ public class Student extends Person {
 
     public void setStudentNumber(int studentNumber) {
         this.studentNumber = studentNumber;
+    }
+
+    // New method to be extracted
+    public void displayStudentInformation() {
+        System.out.println("Student's name: " + getName());
+        System.out.println("Student's ID: " + getStudentNumber());
     }
 }
