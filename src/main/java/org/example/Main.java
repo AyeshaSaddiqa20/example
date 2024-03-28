@@ -6,20 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner inputScanner = new Scanner(System.in);
-
-        // Adding multiple variables
-        System.out.print("Enter student's first name: ");
-        String firstName = inputScanner.nextLine();
-        System.out.print("Enter student's last name: ");
-        String lastName = inputScanner.nextLine();
+        System.out.print("Enter student's name: ");
+        String studentFullName = inputScanner.nextLine();
+        String[] nameParts = studentFullName.split(" ");
+        String firstName = nameParts[0];
+        String lastName = nameParts.length > 1 ? nameParts[1] : "";
         System.out.print("Enter student's ID: ");
-        int studentId = inputScanner.nextInt();
-
-        // Merging variables into a single variable
-        String studentInfo = firstName + " " + lastName;
-
+        int studentIdentifier = inputScanner.nextInt();
         inputScanner.close();
 
-        System.out.println("Student's info: " + studentInfo + ", Student's ID: " + studentId);
+        System.out.println("Student's first name: " + firstName);
+        System.out.println("Student's last name: " + lastName);
+        System.out.println("Student's ID: " + studentIdentifier);
     }
 }
