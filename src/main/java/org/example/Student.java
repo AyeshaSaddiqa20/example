@@ -19,9 +19,10 @@ public class Student extends Person {
         this.studentNumber = studentNumber;
     }
 
-    // New method to be extracted
-    public void displayStudentInformation() {
+    // Method to be extracted
+    public void printStudentInformation() {
         System.out.println("Student's name: " + getName());
         System.out.println("Student's ID: " + getStudentNumber());
+        // Add more information if needed
     }
 }
